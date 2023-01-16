@@ -10,14 +10,6 @@ $black: #000;
 
 $font-family: "Rowdies", cursive;
 
-@font-face {
-  font-family: SpookyGravePersonalUse;
-  src: url("./assets/fonts/SpookyGravePersonalUse.ttf");
-}
-@font-face {
-  font-family: Angled;
-  src: url("./assets/fonts/Angled.otf");
-}
 * {
   padding: 0;
   margin: 0;
@@ -74,8 +66,16 @@ body {
 .btn-main {
   background-color: $main-color;
 }
+.btn-main:hover {
+  background-color: #ffd17b;
+  color: orange;
+}
 .btn-second {
   background-color: $second-color;
+}
+.btn-second:hover {
+  background-color: #678fdf;
+  color: orange;
 }
 
 .m-t-4 {
@@ -122,7 +122,7 @@ body {
   border-radius: unset;
   margin: 10px;
   background-color: transparent;
-
+  opacity: 0.8;
   position: relative;
 
   &::before {
@@ -133,7 +133,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background-color: $second-color;
+    background-color: #4267b2;
   }
 
   &-active {
